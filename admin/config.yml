@@ -1,0 +1,51 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+media_folder: "src/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "products"
+    label: "Ürünler"
+    label_singular: "Ürün"
+    folder: "src/products"
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["order", "title", "price"]
+    summary: "{{title}} - {{price}}"
+    fields:
+      - { label: "Ürün adı", name: "title", widget: "string" }
+      - { label: "Fiyat", name: "price", widget: "string", hint: "Örnek: ₺249" }
+      - { label: "Kısa açıklama", name: "description", widget: "text" }
+      - { label: "Ürün fotoğrafı", name: "image", widget: "image" }
+      - { label: "Etiket", name: "badge", widget: "string", required: false, hint: "Örnek: Yeni, Popüler, Luna" }
+      - { label: "Sıra", name: "order", widget: "number", value_type: "int", default: 1 }
+      - { label: "Aktif mi?", name: "active", widget: "boolean", default: true, hint: "Kapalı olursa ürün sitede görünmez." }
+      - { label: "Detay notu", name: "body", widget: "markdown", required: false }
+
+  - name: "settings"
+    label: "Site Ayarları"
+    files:
+      - label: "Genel Ayarlar"
+        name: "site"
+        file: "src/_data/site.json"
+        fields:
+          - { label: "Marka adı", name: "brandName", widget: "string" }
+          - { label: "Kısa marka adı", name: "brandShort", widget: "string" }
+          - { label: "Instagram kullanıcı adı", name: "instagramHandle", widget: "string", hint: "Sadece kullanıcı adı. Örnek: bialunacolection" }
+          - { label: "WhatsApp numarası", name: "whatsappNumber", widget: "string", hint: "Başında + olmadan yaz. Örnek: 905551112233" }
+          - { label: "Üst duyuru", name: "announcement", widget: "string" }
+          - { label: "Ana başlık", name: "heroTitle", widget: "string" }
+          - { label: "Ana açıklama", name: "heroText", widget: "text" }
+          - { label: "Ana buton yazısı", name: "buttonText", widget: "string" }
+          - { label: "İkincil buton yazısı", name: "secondaryButtonText", widget: "string" }
+          - { label: "Güven metni 1", name: "shippingText", widget: "string" }
+          - { label: "Güven metni 2", name: "packagingText", widget: "string" }
+          - { label: "Güven metni 3", name: "orderText", widget: "string" }
+          - { label: "Hakkımızda başlığı", name: "aboutTitle", widget: "string" }
+          - { label: "Hakkımızda metni", name: "aboutText", widget: "text" }
+          - { label: "İletişim başlığı", name: "contactTitle", widget: "string" }
+          - { label: "İletişim metni", name: "contactText", widget: "text" }
+          - { label: "Footer metni", name: "footerText", widget: "string" }

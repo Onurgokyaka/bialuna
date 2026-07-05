@@ -1,0 +1,12 @@
+{
+  "name": "bialuna-cms-website",
+  "version": "1.0.0",
+  "description": "Bialuna Collection static website with Decap CMS admin panel",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve --watch"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
