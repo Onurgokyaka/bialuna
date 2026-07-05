@@ -1,5 +1,5 @@
 ---
-title: "Mor Çiçek Desenli Şal"
+title: "Mor Çiçek Desenli Eşarp"
 price: "₺280"
 description: "Mor ve lila tonlarında büyük çiçek desenli, dikkat çekici şal modeli."
 image: "/assets/uploads/sal-mor-cicek-desenli.jpg"
