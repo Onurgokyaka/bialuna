@@ -1,0 +1,132 @@
+[
+  {
+    "title": "Petrol Turkuaz Desenli Eşarp",
+    "price": "₺480",
+    "description": "Petrol ve turkuaz tonlarında desenli, şık ve modern eşarp modeli.",
+    "image": "/assets/uploads/esarp-petrol-turkuaz-desenli.jpg",
+    "badge": "Yeni",
+    "category": "Eşarp",
+    "active": true,
+    "paymentLink": ""
+  },
+  {
+    "title": "Pembe Desenli Glamouria Eşarp",
+    "price": "₺480",
+    "description": "Pembe tonlarında zarif desenli Glamouria eşarp modeli.",
+    "image": "/assets/uploads/esarp-pembe-desenli-glamouria.jpg",
+    "badge": "Yeni",
+    "category": "Eşarp",
+    "active": true,
+    "paymentLink": ""
+  },
+  {
+    "title": "Vizon Desenli Glamouria Eşarp",
+    "price": "₺480",
+    "description": "Vizon tonlarında sade ve şık desenli Glamouria eşarp modeli.",
+    "image": "/assets/uploads/esarp-vizon-desenli-glamouria.jpg",
+    "badge": "Yeni",
+    "category": "Eşarp",
+    "active": true,
+    "paymentLink": ""
+  },
+  {
+    "title": "Çiçek Desenli Glamouria Eşarp",
+    "price": "₺480",
+    "description": "Çiçek desenleriyle öne çıkan, zarif Glamouria eşarp modeli.",
+    "image": "/assets/uploads/esarp-cicek-desenli-glamouria.jpg",
+    "badge": "Yeni",
+    "category": "Eşarp",
+    "active": true,
+    "paymentLink": ""
+  },
+  {
+    "title": "Mor Petrol Desenli Zer Eşarp",
+    "price": "₺450",
+    "description": "Mor, petrol ve fuşya tonlarında canlı desenli Zer marka eşarp modeli.",
+    "image": "/assets/uploads/esarp-mor-petrol-desenli-zer.jpg",
+    "badge": "Yeni",
+    "category": "Eşarp",
+    "active": true,
+    "paymentLink": ""
+  },
+  {
+    "title": "Haki Beyaz Çiçek Desenli Şal",
+    "price": "₺280",
+    "description": "Haki zemin üzerine beyaz çiçek desenli, zarif ve günlük kullanıma uygun şal.",
+    "image": "/assets/uploads/sal-haki-beyaz-cicek-desenli.jpg",
+    "badge": "Yeni",
+    "category": "Şal",
+    "active": true,
+    "paymentLink": ""
+  },
+  {
+    "title": "Pembe Sulu Desenli Şal",
+    "price": "₺280",
+    "description": "Pembe tonlarında yumuşak geçişli, sade ve feminen görünümlü şal.",
+    "image": "/assets/uploads/sal-pembe-sulu-desenli.jpg",
+    "badge": "Yeni",
+    "category": "Şal",
+    "active": true,
+    "paymentLink": ""
+  },
+  {
+    "title": "Lacivert Çiçek Desenli Şal",
+    "price": "₺280",
+    "description": "Lacivert kenarlı, canlı çiçek desenleriyle kombinlere hareket katan şal.",
+    "image": "/assets/uploads/sal-lacivert-cicek-desenli.jpg",
+    "badge": "Yeni",
+    "category": "Şal",
+    "active": true,
+    "paymentLink": ""
+  },
+  {
+    "title": "Mor Çiçek Desenli Şal",
+    "price": "₺280",
+    "description": "Mor ve lila tonlarında büyük çiçek desenli, dikkat çekici şal modeli.",
+    "image": "/assets/uploads/sal-mor-cicek-desenli.jpg",
+    "badge": "Yeni",
+    "category": "Şal",
+    "active": true,
+    "paymentLink": ""
+  },
+  {
+    "title": "Haki Kahve Çiçek Desenli Şal",
+    "price": "₺280",
+    "description": "Haki ve kahve tonlarında çiçek desenli, soft ve şık şal modeli.",
+    "image": "/assets/uploads/sal-haki-kahve-cicek-desenli.jpg",
+    "badge": "Yeni",
+    "category": "Şal",
+    "active": true,
+    "paymentLink": ""
+  },
+  {
+    "title": "Pudra Yaprak Desenli Şal",
+    "price": "₺280",
+    "description": "Pudra zemin üzerinde yaprak desenli, hafif ve zarif görünümlü şal.",
+    "image": "/assets/uploads/sal-pudra-yaprak-desenli.jpg",
+    "badge": "Yeni",
+    "category": "Şal",
+    "active": true,
+    "paymentLink": ""
+  },
+  {
+    "title": "Krem Yaprak Desenli Şal",
+    "price": "₺280",
+    "description": "Krem tonlarında yaprak desenli, günlük ve özel kombinlere uygun şal.",
+    "image": "/assets/uploads/sal-krem-yaprak-desenli.jpg",
+    "badge": "Yeni",
+    "category": "Şal",
+    "active": true,
+    "paymentLink": ""
+  },
+  {
+    "title": "Bebe Mavi Çiçek Desenli Şal",
+    "price": "₺280",
+    "description": "Bebe mavisi zemin üzerine büyük çiçek desenli, ferah ve zarif şal.",
+    "image": "/assets/uploads/sal-bebe-mavi-cicek-desenli.jpg",
+    "badge": "Yeni",
+    "category": "Şal",
+    "active": true,
+    "paymentLink": ""
+  }
+]
