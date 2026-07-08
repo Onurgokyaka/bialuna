@@ -1,0 +1,127 @@
+---
+title: Bialuna Collection
+description: Eşarp ve şal koleksiyonu
+---
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ site.brandName }} | Eşarp & Şal</title>
+  <meta name="description" content="{{ site.heroText }}" />
+  <meta property="og:title" content="{{ site.brandName }}" />
+  <meta property="og:description" content="{{ site.heroText }}" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body data-whatsapp="{{ site.whatsappNumber }}">
+  <header class="site-header">
+    <a class="brand" href="#anasayfa" aria-label="{{ site.brandName }} ana sayfa">
+      <img class="brand-logo" src="/assets/uploads/bia-luna-logo.jpg" alt="Bia & Luna logo" />
+      <span><strong>{{ site.brandShort }}</strong><small>Collection</small></span>
+    </a>
+    <nav class="nav" aria-label="Ana menü">
+      <a href="#urunler">Ürünler</a>
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+    <a class="header-action js-whatsapp-general" href="#" target="_blank" rel="noopener">WhatsApp</a>
+  </header>
+
+  <main>
+    <section class="hero" id="anasayfa">
+      <div class="hero-copy">
+        <p class="eyebrow">{{ site.announcement }}</p>
+        <h1>{{ site.heroTitle }}</h1>
+        <p class="hero-text">{{ site.heroText }}</p>
+        <div class="hero-actions">
+          <a class="button primary js-whatsapp-general" href="#" target="_blank" rel="noopener">{{ site.buttonText }}</a>
+          <a class="button ghost" href="#urunler">{{ site.secondaryButtonText }}</a>
+        </div>
+        <div class="mini-trust">
+          <span>✓ {{ site.shippingText }}</span>
+          <span>✓ {{ site.packagingText }}</span>
+          <span>✓ {{ site.orderText }}</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrap">
+          <img src="/assets/uploads/esarp-cicek-desenli-glamouria.jpg" alt="{{ site.brandName }} koleksiyon görseli" />
+        </div>
+        <div class="floating-card">
+          <span>Yeni koleksiyon</span>
+          <strong>Yeni koleksiyon, zarif dokular ve özel desenler</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-strip" id="hakkimizda">
+      <div>
+        <p class="eyebrow">Hakkımızda</p>
+        <h2>{{ site.aboutTitle }}</h2>
+      </div>
+      <p>{{ site.aboutText }}</p>
+    </section>
+
+    <section class="section" id="urunler">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Koleksiyon</p>
+          <h2>Ürünler</h2>
+        </div>
+        <a class="text-link" href="https://www.instagram.com/{{ site.instagramHandle }}" target="_blank" rel="noopener">@{{ site.instagramHandle }}</a>
+      </div>
+
+      <div class="product-grid">
+        {% for product in products %}
+        {% if product.active %}
+        <article class="product-card">
+          <div class="product-image">
+            <img src="{{ product.image }}" alt="{{ product.title }}" loading="lazy" />
+            {% if product.badge %}<span class="product-badge">{{ product.badge }}</span>{% endif %}
+          </div>
+          <div class="product-body">
+            <h3>{{ product.title }}</h3>
+            <p>{{ product.description }}</p>
+            <div class="product-bottom">
+              <strong>{{ product.price }}</strong>
+              <button class="js-whatsapp-product" data-product="{{ product.title }}" data-price="{{ product.price }}">Sipariş Sor</button>
+            </div>
+          </div>
+        </article>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="features">
+      <article><span></span><strong>Modeli seç</strong><p>Beğendiğin eşarp veya şal modelini ürünler arasından kolayca incele.</p></article>
+      <article><span></span><strong>Stok bilgisini sor</strong><p>Renk, adet ve güncel stok bilgisi için WhatsApp üzerinden hızlıca yaz.</p></article>
+      <article><span></span><strong>Kolay sipariş ver</strong><p>Ürün butonuna tıkladığında WhatsApp mesajı otomatik olarak hazırlanır.</p></article>
+    </section>
+
+    <section class="contact" id="iletisim">
+      <div class="contact-copy">
+        <p class="eyebrow">İletişim</p>
+        <h2>{{ site.contactTitle }}</h2>
+        <p>{{ site.contactText }}</p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label>Ad Soyad<input type="text" id="name" placeholder="Adınızı yazın" autocomplete="name" /></label>
+        <label>İlgilendiğiniz ürün<input type="text" id="product" placeholder="Örn: Soft Krem Eşarp" /></label>
+        <label>Notunuz<textarea id="message" rows="4" placeholder="Renk, adet veya kargo sorusu yazabilirsiniz"></textarea></label>
+        <button class="button primary" type="submit">WhatsApp Mesajı Oluştur</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> {{ site.brandName }}. {{ site.footerText }}</p>
+    <div>
+      <a href="https://www.instagram.com/{{ site.instagramHandle }}" target="_blank" rel="noopener">Instagram</a>
+      <a class="js-whatsapp-general" href="#" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </footer>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
